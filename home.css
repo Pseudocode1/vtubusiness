@@ -1,0 +1,697 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+/*    box-sizing: border-box;*/
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: yellow;
+/*     position: fixed; */
+    margin-bottom: 5em;
+}
+
+    .whatsapp{
+      display: block;
+      width: 6%;
+      height: 10%;
+      position: fixed;
+      bottom: 50px;
+      right: 20px;
+      border-radius: 50px;
+      border: 1px solid green;
+    }
+    .whatsapp img{
+      width: 100%;
+      border-radius: 50px;
+      height: 100%;
+    }
+
+.media{
+    color: rgb(6, 177, 111);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    z-index: 20;
+}
+
+nav ul{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.header .logo{
+    margin-left: 20px;
+}
+
+.header > div:nth-child(1) img{
+    width: 80%;
+    border-radius: 5px;
+    margin: 10px 8px;
+    position: relative;
+    z-index: 200;
+}
+
+.header > div:nth-child(2){
+    margin-right: 5px;
+}
+
+.header nav li{
+    margin-right: 40px;
+    list-style-type: none;
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+}
+
+.header nav li a{
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.header nav a:hover{
+    color: #fff;
+}
+
+.h2{
+    margin: 40px 0;
+    font-size: 19px;
+    color: rgb(6, 177, 111);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mediaspan{
+    color: #f22;
+}
+
+.show{
+    left: 0;
+    transition: ease-in-out 1s;
+}
+.hide{
+  left: -200px;
+  transition: ease-in-out 1s;
+}
+
+#menu,
+#times{
+    display: none;
+    padding: 0 3px;
+    width: 2%;
+}
+
+.body{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('images/l.jpg');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    padding: 50px 0;
+}
+.box-cont{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 4em auto 4em;
+    text-align: center;
+}
+.box-cont i{
+    color: green;
+}
+.box-cont > div{
+    width: 25%;
+    border: 1px solid #999;
+    padding: 30px 15px;
+    margin: 0 5px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 1s;
+    background-color: #fff;
+}
+.box-cont > div:hover{
+    
+    box-shadow: 2px 2px 10px #f22;
+}
+
+.box-cont p{
+    margin: 15px 0 5px;
+    font-family: monospace;
+}
+
+.btn{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 40px;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 3px;
+    transition: ease-out 1s;
+    border: none;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: yellow;
+    border: none;
+    outline: none;
+    color: #333;
+    font-weight: 600;
+}
+.box-cont > div h3{
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.pic-s{
+    width: 100%;
+    height: 100%;
+    margin: 1em 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.pic-cont{ 
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2em auto;
+}
+
+.pic-cont div > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    padding: 20px 10px;
+    font-family: monospace;
+    
+}
+
+.pic-cont > div{
+    width: 45%;
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+.pic-cont .mtn{
+    background: yellow;
+    height: 100%;
+}
+.pic-cont .airtel{
+    background: #f22;
+    height: 100%;
+}
+
+.pic-cont div > div:nth-child(odd){
+    background: #fff;   
+}
+
+.pic-cont div h4{
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.form{
+    width: 50%;
+    height: 70vh;
+    background: #333;
+    margin: 3em auto;
+    border-radius: 8px;
+    padding: 10px 0;
+}
+
+.myform > div legend{
+    display: none;
+    color: #000;
+    position: absolute;
+    left: 40%;
+   background: #eee;
+    padding: 5px 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.myform{
+    width: 60%;  
+    height: 300px;
+    margin: 3em auto;
+    padding: 20px 10px 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    font-family: monospace;
+}
+
+.myform p{
+    font-size: 11px;
+    margin: 15px 0;
+}
+
+.form #input,
+.form #inpu{
+  background: #eee;
+    width: 70%;
+    height: 48px;
+    text-align: center;
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    margin: 10px 0 15px;
+    border: none;
+    outline: none;
+    padding: 0 5px;
+    transition: ease-in-out 1s;
+    border-radius: 3px;
+}
+.form #input:focus{
+  border: 1px;
+}
+
+
+
+/*......SERVICES........*/
+
+.service{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url('images/l.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: monospace;
+    margin-bottom: 6em;
+}
+.service div{
+    width: 70%;
+    margin: 80px 20px 0;
+    padding: 10px;
+    color: #fff;
+    position: absolute;
+    
+}
+.service h1{
+    font-size: 64px;
+    margin: 20px 0 40px;
+}
+.service h2{
+    font-size: 32px;
+    margin: 0 0 20px 30px;
+}
+.service h3{
+    font-size: 16px;
+    margin: 50px 0 0 70px;
+}
+
+/*............PRICING..............*/
+.service-cont{ 
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 2em auto;
+    font-family: monospace;
+}
+
+.service-cont div > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    
+}
+
+.service-cont div > img,
+.pic-cont > img{
+    border-radius: 50%;
+    width: 10%;
+    margin: 50px 0 0;
+}
+.pic-cont > img{
+    width: 4%;
+     margin: 50px 0;
+}
+
+.service-cont div div > div{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    padding: 20px 10px;
+
+}
+
+.service-cont > div{
+    width: 45%;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.service-cont .mtn{
+    background: yellow;
+    height: 100%;
+    margin: 35px 0 5em;
+}
+.service-cont .airtel{
+    background: #f22;
+    height: 100%;
+    margin: 5em 0 15px;
+}
+.service-cont .nine-m{
+    background: #222;
+    height: 100%;
+    margin: 5em 0 15px;
+}
+.service-cont .nine-m > div:nth-child(even){
+    color: #fff;
+}
+.service-cont .glo{
+    background: #0c0;
+    height: 100%;
+    margin: 35px 0 5em;
+}
+
+.service-cont div div > div:nth-child(odd){
+    background: #fff;
+}
+
+
+/*...................PROMO.......................*/
+
+.promo-sec-one{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    font-family: monospace;
+    border: 2px solid lightblue;
+    margin-bottom: 5em;
+}
+
+.graphic{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto 5em;
+}
+
+.graphic-cont{
+    width: 80%;
+    height: 100%;
+    border: 2px solid lightblue;
+    padding: 20px;
+    margin: auto;
+    background-image: url('images/ewe.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.promo-details{
+    width: 100%;
+    line-height: 1em;
+    padding: 20px 15px;
+    font-family: monospace;
+}
+.promo-details ul{
+    margin: 30px 0 0 40px;
+}
+.promo-details ul li{
+    line-height: 2em;
+}
+
+/*..................FOOTER.............*/
+
+.footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: #222;
+    color: #fff;
+    padding: 10px 5px;
+    font-family: monospace;
+    margin-top: 6em;
+}
+
+.footer .cont{
+    padding: 20px 15px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+}
+.footer .cont div{
+    text-align: left;
+}
+
+.footer .footer-nav li{
+    list-style-type: none;
+    padding: 10px 0;
+}
+.footer .footer-nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer span{
+    font-size: 16px;
+}
+
+.footer .cont div:nth-child(1) p,
+.footer .cont div:last-child a,
+.footer .cont div:last-child h3{
+    line-height: 3em;
+}
+.footer .cont div:last-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.footer .blue{
+    color: royalblue;
+}
+.footer .red{
+    color: red;
+}
+.footer .green{
+    color: green;
+}
+.footer .white{
+    color: #fff;
+}
+
+@media(max-width: 700px){
+    .promo-sec-one{
+        flex-direction: column;
+        width: 80%;
+        margin-top: 10em;
+    }
+    .graphic{
+        width: 100%;
+        height: 70vh;
+        padding: 0;
+    }
+    .graphic-cont{
+        background-image: url('images/ewe-portrait.jpg');
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        border: none;
+    }
+    .promo-sec-one > div{
+        width: 100%;
+    }
+    .promo-sec-one > div:nth-child(2){
+        padding: 0 20px;
+    }
+    .promo-sec-one img{
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    .body{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('images/ano.jpg');
+    }
+    .header{
+        justify-content: space-between;
+        background-color: yellow;
+        align-items: center;
+        text-align: center;
+        padding: 5px 10px
+        margin-bottom: 1em;
+        position: fixed;
+        top: 0;
+        z-index: 10000;
+    }
+    #menu{
+        display: block;
+        margin-right: 40px;
+    }
+    #times{
+        margin-right: 40px;
+    }
+    nav{
+       flex-direction: column;
+       justify-content: flex-start;
+        background-color: yellow;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        left: -200px;
+        height: 100vh;
+        text-align: left;
+        padding: 50px 10px;
+    }
+    nav ul{
+      flex-direction: column;
+      position: relative;
+      top: 30px;
+      height: 100px;
+      padding: 10px 15px;
+    }
+    nav ul li a{
+      color: #333;
+      font-size: 14px;
+    }
+    nav ul i{
+      font-size: 16px;
+    }
+    .header > div:nth-child(1) img{
+        width: 90%;
+        height: 50%;
+        margin-left: -10px;
+    }
+    .header nav li{
+        line-height: 5em;
+       margin: 0;
+    }
+    .box-cont{
+        flex-direction: column;
+         margin: 2em auto 4em;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+    }
+    .box-cont div{
+        width: 100%;
+    }
+    .body{
+        height: 100%;
+        text-align: center;
+        margin-top: 3em;
+    }
+    .btn{
+        background: yellow;
+        color: #333;
+    }
+    .box-cont > div{
+        width: 90%;
+        margin: 5px 0;
+    }
+    
+    .pic-cont{ 
+        margin: 1em auto;
+    }
+    .pic-cont > div{
+        width: 90%;        
+    }
+    .h2{
+        margin: 50px 0;
+        font-size: 16px;
+    }
+    .form{
+        width: 90%;
+    }
+    .myform{
+        margin: 3em auto;
+        width: 85%;
+    }
+    .myform #input,
+    .form #inpu{
+        width: 90%;
+    }
+    .myform > div legend{
+        left: 21%;
+    }
+    .service {
+       margin-top: 3em;
+    }
+    .service h1{
+        font-size: 32px;
+        margin: 20px 0;
+    }
+    .service h2{
+        font-size: 20px;
+        margin: 0 0 10px 30px;
+    }
+    .service h3{
+        font-size: 14px;
+        margin: 20px 0 0 70px;
+    }
+    .service div{
+        width: 90%;
+        margin-top: 8em;
+    }
+    .service-cont{
+        flex-direction: column;
+        width: 100%;
+    }
+    .service-cont div{
+        width: 95%;
+    }
+    .pic-cont > img{
+        width: 10%;
+        margin: 40px 0;
+    }
+    .footer .cont{
+        padding: 20px 5px;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .footer .cont > div{
+        width: 33.3%;
+        text-align: center;
+    }
+    .whatsapp{
+      display: block;
+      width: 17%;
+      height: 8%;
+      position: fixed;
+      bottom: 50px;
+      right: 20px;
+      border-radius: 50px;
+      border: 1px solid green;
+    }
+    .whatsapp img{
+      width: 100%;
+      border-radius: 50px;
+      height: 100%;
+    }
+}
